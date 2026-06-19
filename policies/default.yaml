@@ -1,0 +1,35 @@
+# MCP Shield — Default Security Policy
+# This policy provides sensible security defaults for MCP server connections.
+
+defaults:
+  # Action on violation: block | warn | log
+  on_violation: block
+  # Automatically redact detected secrets in responses
+  redact_secrets: true
+
+# Per-server tool rules
+servers:
+  filesystem:
+    tools:
+      write_file:
+        require_approval: true
+      delete_file:
+        block: true
+      read_file:
+        allow: true
+
+  database:
+    tools:
+      execute_query:
+        require_approval: true
+      drop_table:
+        block: true
+
+# Detector configuration
+detectors:
+  prompt_injection: true
+  secret_exfiltration: true
+  pii: false
+  llm_judge:
+    enabled: false
+    model: "gpt-4o-mini"
