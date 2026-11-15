@@ -1,5 +1,10 @@
 # mcp-shield
 
+[![Follow on GitHub](https://img.shields.io/github/followers/devsoniclk?label=Follow%20%40devsoniclk&style=social)](https://github.com/devsoniclk)
+[![Star on GitHub](https://img.shields.io/github/stars/devsoniclk/mcp-shield?style=social)](https://github.com/devsoniclk/mcp-shield)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
 Your agent trusts every MCP server it connects to. It shouldn't.
 
 mcp-shield is a security proxy that sits between your agent and its MCP servers. Every tool call goes through it. Malicious tool definitions, injected responses, and credential exfiltration attempts get caught before they reach the model.
@@ -103,3 +108,10 @@ Full threat model in [docs/threat-model.md](docs/threat-model.md).
 ## License
 
 MIT
+
+---
+
+### 🌟 Part of the Sovereign Agent Fleet
+Engineered by **[Lakshitha Dananjaya](https://github.com/devsoniclk)** (`@devsoniclk`) | [X / Twitter](https://x.com/BeingDananjaye) | [dlxconsult.com](https://dlxconsult.com)
+
+⭐ **Star this repository** to bookmark it and follow [@devsoniclk](https://github.com/devsoniclk) for production-grade agent security and quant trading tools.
